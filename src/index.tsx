@@ -11,4 +11,4 @@ ReactDOM.render(
     <Provider store={createStore<DmState>(baDmReducer, applyMiddleware(thunk))}>
         <App />
     </Provider>
-    , document.getElementById('example'));
+    , document.getElementById('content'));
