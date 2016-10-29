@@ -1,0 +1,22 @@
+{
+  "name": "baDmTsAppTest",
+  "description": "BrightAuthor Data Model Typescript Test Client",
+  "version": "0.1.1",
+  "author": "Jim Sugg <jsugg@brightsign.biz>",
+  "license": "MIT",
+  "dependencies": {
+    "@brightsign/badatamodel": "^0.1.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.9.5",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "build": "webpack"
+  }
+}

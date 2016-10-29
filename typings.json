@@ -1,0 +1,13 @@
+{
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20161019125345"
+  },
+  "dependencies": {
+    "@brightsign/badatamodel": "npm:@brightsign/badatamodel",
+    "react": "registry:npm/react#15.0.1+20160601175240",
+    "react-dom": "registry:npm/react-dom#15.0.1+20160826174104",
+    "react-redux": "registry:npm/react-redux#4.4.0+20160614222153",
+    "redux": "npm:redux",
+    "redux-thunk": "github:gaearon/redux-thunk/index.d.ts#22946983b612e726156ac9059c56bb8d36c93bca"
+  }
+}

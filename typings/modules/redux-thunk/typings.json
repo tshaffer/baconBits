@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/gaearon/redux-thunk/22946983b612e726156ac9059c56bb8d36c93bca/index.d.ts",
+    "raw": "github:gaearon/redux-thunk/index.d.ts#22946983b612e726156ac9059c56bb8d36c93bca",
+    "typings": "https://raw.githubusercontent.com/gaearon/redux-thunk/22946983b612e726156ac9059c56bb8d36c93bca/index.d.ts"
+  }
+}
