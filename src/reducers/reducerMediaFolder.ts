@@ -21,7 +21,6 @@ const createMediaFolderState =
 const newMediaFolderState = createMediaFolderState("");
 
 const mediaFolderReducer = (state: MediaFolderState = newMediaFolderState, {type, payload}: MediaFolderAction) => {
-    console.log("Poo");
     switch (type) {
         case SET_MEDIA_FOLDER:
             let { mediaFolder } = payload;

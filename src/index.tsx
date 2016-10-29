@@ -11,7 +11,7 @@ import { AppState } from './reducers/index';
 
 export interface ReduxState {
     appState: AppState,
-    badmState: DmState
+    badm: DmState
 }
 
 import App from './components/QDSignBuilder';
