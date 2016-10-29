@@ -14,6 +14,14 @@ import {
     baGetSignMetaData, baGetZoneCount, baGetZoneByName
 } from '@brightsign/badatamodel';
 
+import {
+    AppState
+} from '../reducers/index';
+
+import {
+    ReduxState
+} from '../index';
+
 interface Props {
     sign : DmSign,
     zoneCount : number,
@@ -21,19 +29,22 @@ interface Props {
     onAddZone : DmDispatch
 }
 
-function handleAddZone() : ThunkAction<void, DmState, undefined> {
+function handleAddZone() : ThunkAction<void, ReduxState, undefined> {
     return (dispatch, getState, ex) =>
     {
         console.log("handleAddZone invoked");
+        let badmState = getState().badm;
 
-        let zoneCount = baGetZoneCount(getState());
+        let zoneCount = baGetZoneCount(badmState);
         let newZoneName = "Zone" + (zoneCount+1).toString();
         dispatch(baAddZone(newZoneName,ZoneType.Images));
 
-        zoneCount = baGetZoneCount(getState());
+        badmState = getState().badm;
+
+        zoneCount = baGetZoneCount(badmState);
         console.log("number of zones is:", zoneCount);
 
-        let zone = baGetZoneByName(getState(), {name: newZoneName});
+        let zone = baGetZoneByName(badmState, {name: newZoneName});
         if (zone) {
             console.log("Found new zone: ", zone.name);
         } else {
@@ -62,11 +73,17 @@ class App extends React.Component<Props, any> {
     }
 }
 
-const mapStateToProps = (state, ownProps) => ({
-    sign: baGetSignMetaData(state),
-    zoneCount: baGetZoneCount(state),
-    zones: state.zones,
-});
+const mapStateToProps = (state, ownProps) => {
+    let badmState: DmState;
+    badmState = state.badm;
+    return (
+    {
+        sign: baGetSignMetaData(badmState),
+        zoneCount: baGetZoneCount(badmState),
+        zones: badmState.zones,
+    }
+    );
+}
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
     onNewSign : () => {dispatch(baNewSign("New Sign", VideoMode.v1920x1080x30p))},
