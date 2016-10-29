@@ -1,0 +1,259 @@
+.sorting-header {
+    font-family: Roboto, sans-serif;
+    /*line-height: 68px;*/
+    /*box-shadow: 0px -5px 5px -5px rgba(0, 0, 0, .2), 5px 0 5px -5px rgba(0, 0, 0, .2), -5px 0px 5px -5px rgba(0, 0, 0, .2);*/
+    /*background-color: hsla(0, 0%, 100%, .8);*/
+    /*cursor: grabbing;*/
+}
+#mediaLibraryFolder {
+    width: 250px;
+}
+
+.tabPadding {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.smallFont {
+    font-size: 11px;
+}
+
+.smallishFont {
+    font-size: 13px;
+}
+
+body {
+    /*width: 1400px;*/
+    /*height: 1000px;*/
+    height: 100%;
+}
+
+.bangContainer {
+    width: 1400px;
+}
+
+.bangPageContainer {
+    display: flex;
+}
+
+.mediaLibraryDiv {
+    flex: 3;
+    overflow-y: scroll;
+    float: left;
+    width: 280px;
+}
+
+.playlistDiv {
+    flex: 8;
+    overflow-y: scroll;
+    position: relative;
+    background-color: lightblue;
+}
+
+.playlistHeaderDiv {
+    background-color: orange;
+    height: 42px;
+]}
+
+.interactiveCanvasDiv {
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    height: 800px;
+]}
+
+.propertySheetDiv {
+    flex: 4;
+    float: right;
+    width: 290px;
+}
+
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.playlist-flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+}
+
+.wrap    {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wrap li {
+    /*background: gold;*/
+}
+
+.mediaLibraryThumbDiv {
+    margin: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2f2f2;
+    width: 110px;
+    height:90px;
+    min-width: 110px;
+    max-height: 90px;
+    background: #f2f2f2;
+    cursor: default;
+}
+
+
+.mediaLibraryThumbLbl {
+    font-size: 8pt;
+    text-align: center;
+    overflow: hidden;
+    width: 110px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+.mediaLibraryThumbImg {
+    /*width: 108px;*/
+    /*height: 108px;*/
+    /*padding: 2px;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    cursor: move;
+}
+
+.selectedBSEvent {
+    background-color: lightblue;
+}
+
+.unSelectedBSEvent {
+}
+
+.selectedImage {
+    background-color: lightblue;
+    /*border-color: red;*/
+}
+
+.unSelectedImage {
+    /*background-color: white;*/
+    /*border-color: white;*/
+    background: #f2f2f2;
+}
+
+.mediaStateBtn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkgray;
+    position: absolute;
+    width: 110px;
+    height: 90px;
+    cursor: default;
+}
+
+/*.playlistItemDiv {*/
+/*position: absolute;*/
+/*}*/
+
+.playlistThumbImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    /*position: absolute;*/
+    cursor: move;
+}
+
+.playlistLbl {
+    position: relative;
+    padding: 2px;
+    display:table;
+    margin:0 auto;
+    cursor: default;
+}
+
+.otherThumbImg {
+    margin-left: 22px;
+    margin-top: 22px;
+    width: 64px;
+    height: 64px;
+    padding: 4px;
+}
+
+#zoomSlider {
+    top: 16px;
+    position: absolute;
+    right: 5px;
+    height: 16px;
+}
+
+#openCloseIcon {
+    top: 3px;
+    position: absolute;
+    right: 5px;
+    /*position: fixed;*/
+    /*right: 375px;*/
+}
+
+.plainButton {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: none;
+    background: none;
+}
+
+.leftSpacing {
+    margin-left: 6px;
+}
+
+.htmlSiteSpec {
+    width: 250px;
+}
+
+.floatMeRight {
+    float: right;
+    margin-right: 6px;
+}
+
+.noVertSpacing {
+    margin: 0px;
+}
+
+.formTextBoxStandardWidth {
+    width: 128px;
+}
+

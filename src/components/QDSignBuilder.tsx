@@ -53,7 +53,7 @@ function handleAddZone() : ThunkAction<void, ReduxState, undefined> {
     };
 }
 
-class App extends React.Component<Props, any> {
+class FormerApp extends React.Component<Props, any> {
 
     componentDidMount() {
         console.log("QDSignBuilder.tsx::componentDidMount invoked");
@@ -90,4 +90,4 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
     onAddZone : () => {dispatch(handleAddZone())}
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(FormerApp);

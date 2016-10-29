@@ -14,14 +14,13 @@ export interface ReduxState {
     badm: DmState
 }
 
-import App from './components/QDSignBuilder';
+// import App from './components/QDSignBuilder';
+import App from './components/App';
 
 const rootReducer = combineReducers<ReduxState>({
     badm : baDmReducer,
     app : appReducer
 });
-
-// {/*<Provider store={createStore<AppState>(rootReducer, applyMiddleware(thunk))}>*/}
 
 ReactDOM.render(
     <Provider store={createStore<ReduxState>(rootReducer, applyMiddleware(thunk))}>
