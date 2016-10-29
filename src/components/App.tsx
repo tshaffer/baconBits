@@ -3,18 +3,16 @@
  */
 import * as React from 'react';
 
-// import BA from '../containers/ba';
+import BA from '../containers/ba';
 
 // doesn't work
 // Cannot find module .....
 // import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 // import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
+// ????
 interface Props {
-    sign : any,
-    zoneCount : number,
-    onNewSign : any,
-    onAddZone : any
+    poo : any
 }
 
 // <MuiThemeProvider>
@@ -29,7 +27,7 @@ export default class App extends React.Component<Props, any> {
 
         return (
             <div className = "container bangContainer">
-                New Flibbet
+                <BA/>
             </div>
         );
     }
