@@ -8,6 +8,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devtool: "source-map",
+    target: 'electron',
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx']
     },

@@ -1,8 +1,9 @@
 {
-  "name": "baDmTsAppTest",
-  "description": "BrightAuthor Data Model Typescript Test Client",
-  "version": "0.1.1",
-  "author": "Jim Sugg <jsugg@brightsign.biz>",
+  "name": "baconBits",
+  "description": "BrightAuthor Connected Built In TypeScript",
+  "version": "0.0.1",
+  "main": "main.js",
+  "author": "Ted Shaffer",
   "license": "MIT",
   "dependencies": {
     "@brightsign/badatamodel": "^0.1.1",
