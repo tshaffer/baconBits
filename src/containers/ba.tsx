@@ -17,20 +17,20 @@ class BA extends React.Component<Props, any> {
 
     constructor(props) {
         super(props);
-        this.state = {
-            bsnPresentations: [],
-            propertySheetOpen: false,
-            selectedZone: null,
-            selectedMediaStateId: "",
-            selectedPlaylistItemId: "",
-            open: false,
-        };
+        // this.state = {
+        //     bsnPresentations: [],
+        //     propertySheetOpen: false,
+        //     selectedZone: null,
+        //     selectedMediaStateId: "",
+        //     selectedPlaylistItemId: "",
+        //     open: false,
+        // };
 
         this.baUI = new BAUI(this);
 
     }
     componentDidMount() {
-        
+
         this.baUI.init();
     }
 

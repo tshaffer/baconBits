@@ -67,14 +67,50 @@ export default class BAUI {
 
         if (process.platform === 'darwin') {
             const name = remote.app.getName();
-            menuTemplate.unshift({
-                label: name,
-                submenu: [{
-                    label: 'Pizza',
-                    click: function () {
-                        console.log("poo");
-                    },
-                }]
+            menuTemplate.unshift(
+                {
+                    label: name,
+                    submenu: [
+                        {
+                            label: 'About ' + name,
+                            click: function () {
+                                console.log("poo");
+                            }
+                        },
+                        // {
+                        //     type: 'separator'
+                        // },
+                        {
+                            label: 'Services',
+                            click: function () {
+                                console.log("poo");
+                            }
+                        },
+                        {
+                            label: 'Hide ' + name,
+                            click: function () {
+                                console.log("poo");
+                            }
+                        },
+                        {
+                            label: 'Hide Others',
+                            click: function () {
+                                console.log("poo");
+                            }
+                        },
+                        {
+                            label: 'Show All',
+                            click: function () {
+                                console.log("poo");
+                            }
+                        },
+                        {
+                            label: 'Quit',
+                            click: function() {
+                                remote.app.quit();
+                            }
+                        }
+                    ]
             })
         }
 
